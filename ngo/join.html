@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Contact us</title>
+<link rel="stylesheet" href="style/join us.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
+<link rel="shortcut icon" type="image/png" href="favicon.png">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/db6778120d.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    
+    
+
+    <!--Join Us Start-->
+     <section class="contact">
+    <div class="Content ">
+      <h2>CONTACT US</h2>
+    </div>
+
+    <div class="Container">
+      <div class="contactInfo">
+        <div class="box">
+          <div class="icon">
+            <i class="fa-solid fa-location-dot"></i> 
+          </div>
+          <div class="text">
+            <h3>Address</h3>
+            <p>82C Mayur Vihar 1 Delhi</p>
+          </div>
+        </div>
+      
+  
+    <div class="box">
+      <div class="icon">
+        <i class="fa-solid fa-phone"></i>
+      </div>
+      <div class="text">
+        <h3>Phone</h3>
+        <p>9315174513</p>
+          </div>
+         </div>
+         
+    <div class="box">
+      <div class="icon">
+        <i class="fa-solid fa-envelope"></i>
+      </div>
+      <div class="text">
+        <h3>Email</h3>
+       <p> <a href="mailto:prashastthehelplife@gmail.com.com">prashastthehelplife@gmail.com</a></p>
+      
+          </div>
+         </div>
+       </div>
+       <div class="contactform">
+        <form>
+          <h2>JOIN US</h2>
+
+          <Form method="post" name="google-sheet">
+          <div class="inputbox">
+            <input type="text" name="" required="required">
+            <span>Full Name</span>
+            
+            
+            </div>
+           <div class="inputbox">
+            <input type="text" name="" required="required">
+            <span>Email</span>
+           </div>
+           <div class="inputbox">
+            <input class="text" type="textarea" required="required"></input>
+            <span>Type your Message...</span>
+           </div>
+           <div class="inputbox">
+            <input type="text" name="" required="required">
+            <span>Age</span>
+           </div>
+           <div class="inputbox">
+            <input type="Submit" name="">
+           </div>
+        </form>
+       </div>
+       
+    </div>
+     </section> 
+
+
+     <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxXaKEd3MV79PIqxhXODATgRbGnDFTUfvxFzJOUNvs5LcMJRgDuOmrBMT_XMywWMZ9I/exec'
+      const form = document.forms['google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+
+
+
+
+
+
+
+    <!--join Us end-->
+    
+    
+    
+</body>
+</html>

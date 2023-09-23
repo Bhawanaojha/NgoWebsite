@@ -1,0 +1,367 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: aliceblue;
+    overflow-x: hidden;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    font-size: 20px;
+    line-height: 26px;
+}
+
+nav{
+   background: wheat;
+   height: 100px;
+   width: 100%;
+ }
+ label.logo img{
+  margin-top: -5%;
+  width: 250px;
+ }
+ nav ul{
+   float: right;
+   margin-right: 20px;
+   
+ }
+ nav ul li{
+   display: inline-block;
+   line-height: 80px;
+   margin: 0 5px;
+ }
+ nav ul li a{
+   color:rgb(77, 77, 222);;
+   font-size: xx-large;
+   padding: 7px 13px;
+   border-radius: 3px;
+   text-transform: uppercase;
+   font-weight: bold;
+   text-decoration: none;
+   list-style: none;
+ }
+ a.active,a:hover{
+   background: #fff;
+   transition: .5s;
+   color: #7e3842;
+ }
+ .checkbtn{
+   font-size: 30px;
+   color: rgb(77, 77, 222);;
+   float: right;
+   line-height: 80px;
+   margin-right: 40px;
+   cursor: pointer;
+   display: none;
+ }
+ #check{
+   display: none;
+ }
+ @media (max-width: 968px){
+   label.logo img{
+     margin-top: -10%;
+     margin-left: -10%;
+   }
+   nav ul li a{
+     font-size: 16px;
+     
+   }
+ }
+ @media (max-width: 875px){
+   .checkbtn{
+     display: block;
+   }
+   nav ul{
+     position: fixed;
+     width: 100%;
+     height: 100vh;
+     background: #27282c;
+     top: 80px;
+     left: -100%;
+     text-align: center;
+     transition: all .5s;
+   }
+   nav ul li{
+     display: block;
+     margin: 50px 0;
+     line-height: 30px;
+   }
+   nav ul li a{
+     font-size: 20px;
+     
+   }
+   a:hover, a.active{
+     background: none;
+     color: #7e3842;
+   }
+   #check:checked ~ ul{
+     left: 0;
+   }
+ }
+ .about-1{
+    margin: 30px;
+    padding: 5px;
+    background-color: aliceblue;
+    margin-top: -1%;
+   
+ }
+ 
+ .about-1 h1{
+    text-align: center;
+    color: rgb(77, 77, 222);
+    font-weight: bold;
+    font-size: xx-large;
+    margin-top: 15%;
+ }
+ 
+ .about-1 p{
+    text-align: center;
+    padding: 3px;
+    color:  #37c4aa;
+    width: 80%;
+    margin-left: 10%;
+ }
+ .row{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+ }
+ 
+ .about-item{
+    background:white;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 500px;
+    padding: 20px;
+    line-height: 20px;
+    color: #8e8b8b;
+    position: relative;
+    margin-top: 30%;
+    border-radius: 10%;
+    padding: 30px;
+    
+ }
+ 
+ .about-item i{
+    font-size: 43px;
+    margin: 0;
+    margin-left: 5%;
+    margin-top: -4s;
+ 
+ }
+ 
+ .about-item h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-left: 5%;
+     color: rgb(77, 77, 222);
+ }
+ 
+ .about-item hr{
+    width: 46px;
+    height: 3px;
+    background-color: #5fbff9;
+    margin: 0 auto;
+    border: none;
+ }
+ 
+ .about-item p{
+    margin-top: 20px;
+    padding-bottom: 35px;
+     color: #37c4aa;
+    margin-left: 10%;
+    
+ }
+ 
+ .about-item:hover{
+    background-color: #7e3842;
+ 
+ }
+ 
+ .about-item:hover i,
+ .about-item:hover h3,
+ .about-item:hover p{
+    
+ }
+ .about-item:hover hr{
+    background-color: #fff;
+ 
+ }
+ 
+ .about-item:hover i{
+    transform: translateY(-20px);
+ }
+ .about-item:hover i,
+ .about-item:hover h3,
+ .about-item:hover hr{
+    transition: all 400ms ease-in-out;
+ }
+ /* about us end*/
+ /* our team start*/
+ 
+ .wrapper{
+    margin-top: 10%;
+    border-radius: 10%;
+ }
+ 
+ .wrapper h1{
+ font-size: 52px;
+ margin-bottom: 60px;
+ text-align: center;
+  color:rgb(77, 77, 222);
+ }
+ 
+ .team {
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 10%;
+ }
+ 
+ .team .team_member{
+    background:#7e3842;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: #8e8b8b;
+    position: relative;
+    border-radius: 10%;
+ }
+ .team .team_member h3{
+    color: rgb(77, 77, 222);
+    font-size: 26px;
+     margin-top: 50px;
+ }
+ .team .team_member p.role{
+    color:#37c4aa ;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 12px 0;
+ }
+ 
+ .team .team_member .team_img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background:#7e3842;
+ }
+ 
+ .team .team_member .team_img img{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+ }
+ 
+ .partner{
+    margin-top: 8%;
+ }
+ .partner h1{
+    font-size: 52px;
+ margin-bottom: 60px;
+ text-align: center;
+  color:rgb(77, 77, 222);
+ }
+ 
+ 
+ /* about section end*/
+ /* footer section*/
+ footer{
+    position: relative;
+    width: 100%;
+    background: wheat;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+    
+ }
+ 
+ footer .social_icon,
+ footer .menu
+ {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+ }
+ footer .social_icon li,
+ footer .menu li
+ {
+    list-style: none;
+ }
+ 
+ footer .social_icon li a
+ {
+    font-size: 2em;
+    color: rgb(77, 77, 222);
+    margin: 0 10;
+    display: inline-block;
+    transition: 0.5s;
+ }
+ 
+ footer .social_icon li a:hover{
+    transform: translateY(-10px);
+    color: #7e3842;
+ }
+ 
+ footer .menu li a{
+    font-size: 1.2em;
+    color:  rgb(77, 77, 222);
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+ }
+ 
+ footer .menu li a:hover{
+    opacity: 1 ;
+    color: #7e3842;
+ }
+ 
+ footer h3{
+    font-size: 1.2em;
+    color:  rgb(77, 77, 222);
+    margin: 0 10px;
+    display: inline-block;
+    font-size: xx-large;
+    font-weight: bold;
+    opacity: 0.75;
+ }
+ 
+ footer a{
+    font-size: 1.2em;
+    color:  rgb(77, 77, 222);
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+ }
+ 
+ footer  a:hover{
+    opacity: 1 ;
+    color: #7e3842;
+ }
+ 
+ 

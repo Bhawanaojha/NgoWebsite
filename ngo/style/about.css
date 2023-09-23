@@ -1,0 +1,389 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #D6E6F2;
+    overflow-x: hidden;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    font-size: 20px;
+    line-height: 26px;
+}
+
+nav{
+   background:#EEEEEE;
+   height: 120px;
+   width: 100vw;
+ }
+ label.logo img{
+  margin-top: -5%;
+  width: 250px;
+ }
+ nav ul{
+   float: right;
+   margin-right: 20px;
+   
+ }
+ nav ul li{
+   display: inline-block;
+   line-height: 80px;
+   margin: 0 5px;
+ }
+ nav ul li a{
+   color:#8675A9;
+   font-size: xx-large;
+   padding: 7px 13px;
+   border-radius: 3px;
+   text-transform: uppercase;
+   font-weight: bold;
+   text-decoration: none;
+   list-style: none;
+ }
+ a.active,a:hover{
+   background:#fff;
+   transition: .5s;
+   color: #FF2E63;
+ }
+ .checkbtn{
+   font-size: 30px;
+   color:#521262;
+
+   float: right;
+   line-height: 80px;
+   margin-right: 40px;
+   cursor: pointer;
+   display: none;
+ }
+ #check{
+   display: none;
+ }
+ @media (max-width: 968px){
+   label.logo img{
+     margin-top: -20%;
+     margin-left: -10%;
+   }
+   nav ul li a{
+     font-size: 16px;
+     
+   }
+ }
+ @media (max-width: 875px){
+   .checkbtn{
+     display: block;
+   }
+   nav ul{
+     position: fixed;
+     width: 100%;
+     height: 100vh;
+     background: #27282c;
+     top: 80px;
+     left: -100%;
+     text-align: center;
+     transition: all .5s;
+   }
+   nav ul li{
+     display: block;
+     margin: 50px 0;
+     line-height: 30px;
+   }
+   nav ul li a{
+     font-size: 20px;
+     
+   }
+   a:hover, a.active{
+     background: none;
+     color: #521262;
+   }
+   #check:checked ~ ul{
+     left: 0;
+   }
+ }
+ .about-1{
+    
+    padding: 5px;
+    background-color: #D6E6F2;
+    margin-top: -1%;
+   
+ }
+ 
+ .about-1 h1{
+    text-align: center;
+    color: #FF2E63;
+    font-weight: bold;
+    font-size: xx-large;
+    margin-top: 8%;
+ }
+ 
+ .about-1 p{
+    text-align: center;
+    padding: 3px;
+    color:  #11999E;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+ }
+ .row{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+ }
+ 
+ .about-item{
+    background:white;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 500px;
+    padding: 20px;
+    line-height: 20px;
+    color: #8e8b8b;
+    position: relative;
+    margin-top: 30%;
+    border-radius: 10%;
+    padding: 30px;
+    
+ }
+ 
+ .about-item i{
+    font-size: 43px;
+    margin: 0;
+    margin-left: 5%;
+    margin-top: -4%;
+   color: #FEA82F;
+ }
+ 
+ .about-item h3{
+    font-size: 25px;
+    margin-bottom: 8px;
+    margin-left: 5%;
+     color:  #FF2E63;
+ }
+
+ h3{
+    margin-top: 5%;
+ }
+ 
+ .about-item hr{
+    width: 46px;
+    height: 3px;
+    background-color: #5fbff9;
+    margin: 0 auto;
+    border: none;
+ }
+ 
+ .about-item p{
+    margin-top: 20px;
+    padding-bottom: 35px;
+     color:  #11999E;
+    margin-left: 10%;
+    
+ }
+ 
+ .about-item:hover{
+    background-color: #A3D8F4;
+ 
+ }
+ 
+ .about-item:hover i,
+ .about-item:hover h3,
+ .about-item:hover p{
+    
+ }
+ .about-item:hover hr{
+    background-color: #fff;
+ 
+ }
+ 
+ .about-item:hover i{
+    transform: translateY(-20px);
+ }
+ .about-item:hover i,
+ .about-item:hover h3,
+ .about-item:hover hr{
+    transition: all 400ms ease-in-out;
+ }
+ /* about us end*/
+ /* our team start*/
+ 
+ .wrapper{
+    margin-top: 10%;
+    border-radius: 10%;
+ }
+ 
+ .wrapper h1{
+ font-size: 52px;
+ margin-bottom: 60px;
+ text-align: center;
+  color: #FF2E63;
+ }
+ 
+ .team {
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 10%;
+ }
+ 
+ .team .team_member{
+    background:#A3D8F4;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: #8e8b8b;
+    position: relative;
+    border-radius: 10%;
+ }
+ .team .team_member h3{
+    color:  #FF2E63;
+    font-size: 26px;
+     margin-top: 50px;
+ }
+ .team .team_member p.role{
+    color: #11999E ;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 12px 0;
+ }
+ .team .team_member p{
+   color: #11999E;
+ }
+ 
+ .team .team_member .team_img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background:#FF2E63;
+ }
+ 
+ .team .team_member .team_img img{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+ }
+ 
+ .partner{
+    margin-top: 8%;
+ }
+ .partner h1{
+    font-size: 52px;
+ margin-bottom: 60px;
+ text-align: center;
+  color: #FF2E63;
+ }
+ @media (max-width: 480px) {
+   .partner{
+      width: 40%;
+      margin-top: 8%;
+   }
+   .partner img{
+      width: 140%;
+   }
+   .partner h1{
+      font-size: larger;
+      width: 140%;
+   }
+ }
+ 
+ /* about section end*/
+ /* footer section*/
+ footer{
+    position: relative;
+    width: 100%;
+    background: #EEEEEE;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+    
+ }
+ 
+ footer .social_icon,
+ footer .menu
+ {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+ }
+ footer .social_icon li,
+ footer .menu li
+ {
+    list-style: none;
+ }
+ 
+ footer .social_icon li a
+ {
+    font-size: 2em;
+    color: #8675A9;
+    margin: 0 10;
+    display: inline-block;
+    transition: 0.5s;
+ }
+ 
+ footer .social_icon li a:hover{
+    transform: translateY(-10px);
+    color: #FF2E63;
+ }
+ 
+ footer .menu li a{
+    font-size: 1.2em;
+    color:  #8675A9;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+ }
+ 
+ footer .menu li a:hover{
+    opacity: 1 ;
+    color: #FF2E63;
+ }
+ 
+ footer h3{
+    font-size: 1.2em;
+    color:  #8675A9;
+    margin: 0 10px;
+    display: inline-block;
+    font-size: xx-large;
+    font-weight: bold;
+    opacity: 0.75;
+ }
+ 
+ footer a{
+    font-size: 1.2em;
+    color: #8675A9;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+ }
+ 
+ footer  a:hover{
+    opacity: 1 ;
+    color: #FF2E63;
+ }
+ 
+ 
